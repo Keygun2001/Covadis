@@ -4,12 +4,12 @@
     .MKContainer {
         background-image: url('Images/MarioKartBG.jpg');
         background-repeat: no-repeat;
+        height:1000px;
     }
 
 .vertical-menu {
   width: 200px;
-  height: 150px;
-  /* overflow-y: auto; */
+
 }
 
 .vertical-menu img {
@@ -19,21 +19,14 @@
 }
 
 .vertical-menu a {
-  background-color: grey;
+  background-color: white;
   color: black;
   display: block;
   padding: 12px;
   text-decoration: none;
 }
 
-.vertical-menu a:hover {
-  background-color: #ccc;
-}
 
-.vertical-menu a.active {
-  background-color: red;
-  color: white;
-}
 
 p {
   opacity: 0%;
@@ -47,27 +40,35 @@ p {
 
 
 
-<?php 
+ <?php 
 
-    $results = db_getData("SELECT * FROM Players ORDER BY Score DESC"); 
-    $tel=0;
+$results = db_getData("SELECT * FROM Players ORDER BY Score3 DESC"); 
+$tel=0;
 ?>
-           
+     <div class="MKContainer">
 <div class="container">
-<div class="MKContainer"></div>
-<?php  foreach($results as $row){
-            $tel++;
-    ?>
-            
-           
-            <div class="vertical-menu">
-  <a href="#"><img src="Images/user.svg" alt=""> <?php echo $tel;echo" "; echo $row['GameName'];  echo ": score ";echo $row['Score']; ?> </a>
 
-  </div>
-            
-            
-                        <?php } ?>
+<p class="Tabellen">Leaderboard</p>
+<table>
+
+
+
+<?php  foreach($results as $row){
+        $tel++;
+?>
+        
+       <tr><div class="vertical-menu">
+<a href="#"><img src="Images/user.svg" alt=""> <?php echo $tel;echo" "; echo $row['GameName'];  echo ": score ";echo $row['Score3']; ?> </a>
+
+</div></tr>
+        
+        
+</table>      
+                    <?php } ?>
 </div>
+</div>
+
+
           
     
                     

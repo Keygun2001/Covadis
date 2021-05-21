@@ -84,7 +84,10 @@ div .Player h2{
     font-size:25px;
     font-weight:bold;
 }
-
+.Tabellen{
+    font-size: 28px;
+    color: black;
+}
 .bg-gradient-grey {
     background-image: linear-gradient(#a5a5a5, #9b9b9b);
 }
