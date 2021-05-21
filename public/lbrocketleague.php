@@ -1,17 +1,15 @@
-<?php
-    require_once("header.php");
-?>
+
 
 <style>
     .MKContainer {
-        background-image: url(Images/RocketLeagueBG.jpg);
+        background-image: url('Images/RocketLeagueBG.jpg');
         background-repeat: no-repeat;
+        height:1000px;
+        width:100%;
     }
 
 .vertical-menu {
   width: 200px;
-  height: 150px;
-  overflow-y: auto;
 }
 
 .vertical-menu img {
@@ -42,26 +40,41 @@ p {
 }
 
 </style>
-<div class="flex justify-center MKContainer">
+<?php 
+    include('../src/databaseFunctions.php');
+    include('header.php');
+?>
+ 
 
-    <div class="vertical-menu">
-  <a href="#"><img src="Images/user.svg" alt="">Keagan</a>
-  <a href="#"><img src="Images/user.svg" alt="">Duncan</a>
-  <a href="#"><img src="Images/user.svg" alt="">Tim</a>
-  <a href="#"><img src="Images/user.svg" alt="">Ben</a>
-  <a href="#"><img src="Images/user.svg" alt="">Janekke</a>
-  <a href="#"><img src="Images/user.svg" alt="">Kees</a>
-  <a href="#"><img src="Images/user.svg" alt="">Erik</a>
-  <a href="#"><img src="Images/user.svg" alt="">Piet</a>
-  <a href="#"><img src="Images/user.svg" alt="">Gert</a>
-  <a href="#"><img src="Images/user.svg" alt="">Henk</a>
-  <a href="#"><img src="Images/user.svg" alt="">Simon</a>
-  <a href="#"><img src="Images/user.svg" alt="">Jantje</a>
-  <a href="#"><img src="Images/user.svg" alt="">Jan</a>
-    </div>
 
-  <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>a</p>
 
+<?php 
+
+    $results = db_getData("SELECT * FROM Players ORDER BY Score2 DESC"); 
+    $tel=0;
+?>
+         <div class="MKContainer">
+<div class="container">
+
+<p class="Tabellen">Leaderboard</p>
+<table>
+
+
+  
+  <?php  foreach($results as $row){
+            $tel++;
+    ?>
+            
+           <tr><div class="vertical-menu">
+  <a href="#"><img src="Images/user.svg" alt=""> <?php echo $tel;echo" "; echo $row['GameName'];  echo ": score ";echo $row['Score2']; ?> </a>
+
+  </div></tr>
+            
+            
+  </table>      
+                        <?php } ?>
 </div>
+</div>
+
 
 
