@@ -4,49 +4,49 @@
 ?>
  
 
+<div class="container py-32">
+<h1>Players</h1>
 
-    <h1>Players</h1>
+<?php 
 
-    <?php 
-    
-        $results = db_getData("SELECT * FROM Players"); 
-       
+    $results = db_getData("SELECT * FROM Players"); 
+   
+?>
+           
+   <div class="flex mt-4 flex-wrap">
+  
+    <?php  foreach($results as $row){
+        
     ?>
-               
-       <div class="flex mt-4">
-       <table class="mt-4">
-        <?php  foreach($results as $row){
             
-        ?>
-                
-                 <div class="Player flex">
-                 <tr>
-                        <th>GameNaam</th>
-                        <th>Score</th>
-                        <th>Jaren</th>
-                        
-                    </tr>
-                    <tr>
-                        <td>
-                            <?php echo $row['GameName']; ?>
-                        </td>
-                        <td>
-                            <?php echo $row['Score']; ?>
-                        </td>
-                        <td>
-                            <?php echo $row['Years']; ?>
-                        </td>
-                        
-                    </tr>
-                 </div>
-                <!-- <div class="Player"> -->
-                  
-                
-                
-                            <?php } ?>
-                        
-        </table>
-       </div>
+             <div class="Player flex mr-8 flex-col mb-4">
+             
+        
+                   <h2>GameNaam</h2>
+                    <p>
+                        <?php echo $row['GameName']; ?>
+                    </p>
+                    <h2>Score</h2>
+                    <p>
+                        <?php echo $row['Score']; ?>
+                    </p>
+                    <h2>Jaren</h2>
+                    <p>
+                        <?php echo $row['Years']; ?>
+                    </p>
+                    
+             
+             </div>
+            <!-- <div class="Player"> -->
+              
+            
+            
+                        <?php } ?>
+                    
+
+   </div>
+</div>
+   
          
       
      

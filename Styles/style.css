@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -15,12 +16,14 @@ body {
     
 }
 .Player{
-    height: 200px;
-    width:200px;
-    background-color:red;
+    height: 250px;
+    width:250px;
+    background-color:#5F22F9;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 20px;
+    border-radius:25px;
+    border: 3px solid black;
 }
 
 .nav>li {
@@ -34,4 +37,16 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+div .Player p{
+    color: white;
+}
+h1{
+    font-weight: 800;
+    font-size: 28px;
+}
+div .Player h2{
+    color: white;
+    font-size:25px;
+    font-weight:bold;
 }
