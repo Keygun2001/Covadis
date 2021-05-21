@@ -38,7 +38,6 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
-<<<<<<< HEAD
 
 h1 {
     font-weight: 800;
@@ -54,8 +53,7 @@ select, input, button, textarea {
     padding: 10px 15px;
     background-color: rgb(15, 228, 210);
     color: white;
-    font-weight: 700;
-=======
+    font-weight: 700;}
 div .Player p{
     color: white;
 }
@@ -67,5 +65,4 @@ div .Player h2{
     color: white;
     font-size:25px;
     font-weight:bold;
->>>>>>> 721b670b74af551c2b123b99e215099366f692e8
 }

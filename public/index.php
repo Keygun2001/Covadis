@@ -1,7 +1,6 @@
 <?php 
     include('header.php');
 ?>
-<<<<<<< HEAD
 <div class="container py-32">
     <div class="w-full">
         <div>
@@ -41,10 +40,8 @@
             </div>
         </div>
     </div>
-=======
 <div class="container">
 <a href="roomcreate.php">Start Party</a>
 <br>
 <a href="roomjoin.php">Join Party</a>
->>>>>>> 721b670b74af551c2b123b99e215099366f692e8
 </div>

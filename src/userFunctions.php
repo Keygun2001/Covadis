@@ -15,8 +15,6 @@ function getUser($email,$password){
         return "No user found";
     }
 }
-<<<<<<< HEAD
-=======
 function checkUser($email,$password){
     $conn=db_connect();
     $sql = "SELECT * from Players WHERE email='$email' AND password='$password' ";
@@ -31,5 +29,4 @@ function checkUser($email,$password){
 return "0 results";
 }
 }
->>>>>>> 721b670b74af551c2b123b99e215099366f692e8
 ?>
