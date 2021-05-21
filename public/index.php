@@ -31,7 +31,7 @@
                             <div src="Images/lol.png" class="featurette-image img-fluid mx-auto carouselimg carouselimg1" alt="Foto 1">
                                 <div class="flex justify-center items-end h-full">
                                     <a href="lbleagueoflegends.php">
-                                        <button class="knop">
+                                        <button class="knop knop-gradient">
                                             Leaderboard
                                         </button>
                                     </a>
@@ -42,7 +42,7 @@
                             <div src="Images/mariokart.png" class="featurette-image img-fluid mx-auto carouselimg carouselimg2" alt="Foto 2">
                                 <div class="flex justify-center items-end h-full">
                                     <a href="lbmariokart.php">
-                                        <button class="knop">
+                                        <button class="knop knop-gradient">
                                             Leaderboard
                                         </button>
                                     </a>
@@ -53,7 +53,7 @@
                             <div class="featurette-image img-fluid mx-auto carouselimg carouselimg3">
                                 <div class="flex justify-center items-end h-full">
                                     <a href="lbrocketleague.php">
-                                        <button class="knop">
+                                        <button class="knop knop-gradient">
                                             Leaderboard
                                         </button>
                                     </a>
