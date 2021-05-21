@@ -1,73 +1,75 @@
 <?php 
     include('header.php');
 ?>
-<div class="container py-32">
-    <div class="w-full">
-        <div>
-            <h1>
-                Home
-            </h1>
-            <p class="mt-4">
-                Welkom op de Covadis high-score website.
-            </p>
-        </div>
-        <div>
-            <div class="mt-4"> 
-                <a href="roomcreate.php">
-                    <button class="knop">
-                        Start Party
-                    </button>
-                </a>
-                <a href="roomjoin.php">
-                    <button class="knop">
-                        Join Party
-                    </button>
-                </a>
+<div class="bg-gradient-black">
+    <div class="container py-12">
+        <div class="w-full">
+            <div>
+                <h1>
+                    Home
+                </h1>
+                <p class="mt-4">
+                    Welkom op de Covadis high-score website.
+                </p>
             </div>
-            <div id="carouselPersons" class="carousel slide mt-4" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active relative">
-                        <div src="Images/lol.png" class="featurette-image img-fluid mx-auto carouselimg carouselimg1" alt="Foto 1">
-                            <div class="flex justify-center items-end h-full">
-                                <a href="lbleagueoflegends.php">
-                                    <button class="knop">
-                                        Leaderboard
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div src="Images/mariokart.png" class="featurette-image img-fluid mx-auto carouselimg carouselimg2" alt="Foto 2">
-                            <div class="flex justify-center items-end h-full">
-                                <a href="lbmariokart.php">
-                                    <button class="knop">
-                                        Leaderboard
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="featurette-image img-fluid mx-auto carouselimg carouselimg3">
-                            <div class="flex justify-center items-end h-full">
-                                <a href="lbrocketleague.php">
-                                    <button class="knop">
-                                        Leaderboard
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+            <div>
+                <div class="mt-4"> 
+                    <a href="roomcreate.php">
+                        <button class="knop knop-gradient">
+                            Start Party
+                        </button>
+                    </a>
+                    <a href="roomjoin.php">
+                        <button class="knop knop-gradient">
+                            Join Party
+                        </button>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselPersons" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselPersons" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div id="carouselPersons" class="carousel slide mt-4" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active relative">
+                            <div src="Images/lol.png" class="featurette-image img-fluid mx-auto carouselimg carouselimg1" alt="Foto 1">
+                                <div class="flex justify-center items-end h-full">
+                                    <a href="lbleagueoflegends.php">
+                                        <button class="knop">
+                                            Leaderboard
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div src="Images/mariokart.png" class="featurette-image img-fluid mx-auto carouselimg carouselimg2" alt="Foto 2">
+                                <div class="flex justify-center items-end h-full">
+                                    <a href="lbmariokart.php">
+                                        <button class="knop">
+                                            Leaderboard
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="featurette-image img-fluid mx-auto carouselimg carouselimg3">
+                                <div class="flex justify-center items-end h-full">
+                                    <a href="lbrocketleague.php">
+                                        <button class="knop">
+                                            Leaderboard
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselPersons" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselPersons" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

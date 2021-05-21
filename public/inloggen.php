@@ -5,7 +5,7 @@
         $_SESSION['user'] = getUser($_POST['email'], $_POST['wachtwoord']);
     }
 ?>
-<div class="container py-32">
+<div class="container py-12">
     <div class="w-full">
         <div class="w-full">
             <h1>
