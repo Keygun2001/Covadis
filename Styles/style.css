@@ -14,3 +14,8 @@ body {
     font-weight: 800;
     
 }
+.Player{
+    height: 200px;
+    width:200px;
+    background-color:red;
+}
