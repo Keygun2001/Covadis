@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo CSS_FOLDER; ?>" />
 </head>
 <body>
-    <div class="btm-shadow">
+    <div class="btm-shadow bg-gradient-grey">
         <div class="headercontainer">
             <div class="flex w-full items-end">
                 <div class="w-2/12 p-2">
