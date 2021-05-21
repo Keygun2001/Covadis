@@ -42,7 +42,7 @@ p {
 }
 </style>
 <div class="flex justify-center MKContainer">
-
+    
     <div class="vertical-menu">
   <a href="#"><img src="Images/user.svg" alt="">Erik</a>
   <a href="#"><img src="Images/user.svg" alt="">Tim</a>
