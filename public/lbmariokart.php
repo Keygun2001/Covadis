@@ -1,27 +1,25 @@
-<?php
-    require_once("header.php");
-?>
+
 
 <style>
     .MKContainer {
-        background-image: url(Images/MarioKartBG.jpg);
+        background-image: url('Images/MarioKartBG.jpg');
         background-repeat: no-repeat;
     }
 
 .vertical-menu {
   width: 200px;
   height: 150px;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 .vertical-menu img {
   width: 25px;
   height: 25px;
-  float: right;
+  /* float: right; */
 }
 
 .vertical-menu a {
-  background-color: #eee;
+  background-color: grey;
   color: black;
   display: block;
   padding: 12px;
@@ -41,25 +39,38 @@ p {
   opacity: 0%;
 }
 </style>
-<div class="flex justify-center MKContainer">
+<?php 
+    include('../src/databaseFunctions.php');
+    include('header.php');
+?>
+ 
 
-    <div class="vertical-menu">
-  <a href="#"><img src="Images/user.svg" alt="">Henk</a>
-  <a href="#"><img src="Images/user.svg" alt="">Tim</a>
-  <a href="#"><img src="Images/user.svg" alt="">Ben</a>
-  <a href="#"><img src="Images/user.svg" alt="">Keagan</a>
-  <a href="#"><img src="Images/user.svg" alt="">Janekke</a>
-  <a href="#"><img src="Images/user.svg" alt="">Piet</a>
-  <a href="#"><img src="Images/user.svg" alt="">Erik</a>
-  <a href="#"><img src="Images/user.svg" alt="">Gert</a>
-  <a href="#"><img src="Images/user.svg" alt="">Simon</a>
-  <a href="#"><img src="Images/user.svg" alt="">Jantje</a>
-  <a href="#"><img src="Images/user.svg" alt="">Duncan</a>
-  <a href="#"><img src="Images/user.svg" alt="">Kees</a>
-  <a href="#"><img src="Images/user.svg" alt="">Jan</a>
-    </div>
 
-    <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>a</p>
+
+<?php 
+
+    $results = db_getData("SELECT * FROM Players ORDER BY Score DESC"); 
+    $tel=0;
+?>
+           
+<div class="container">
+<div class="MKContainer"></div>
+<?php  foreach($results as $row){
+            $tel++;
+    ?>
+            
+           
+            <div class="vertical-menu">
+  <a href="#"><img src="Images/user.svg" alt=""> <?php echo $tel;echo" "; echo $row['GameName'];  echo ": score ";echo $row['Score']; ?> </a>
+
+  </div>
+            
+            
+                        <?php } ?>
 </div>
+          
+    
+                    
+
 
 
