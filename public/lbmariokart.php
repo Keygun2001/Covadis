@@ -1,10 +1,8 @@
-<?php
-    require_once("header.php");
-?>
+
 
 <style>
     .MKContainer {
-        background-image: url(Images/MarioKartBG.jpg);
+        background-image: url('Images/MarioKartBG.jpg');
         background-repeat: no-repeat;
     }
 
@@ -43,7 +41,7 @@ p {
 </style>
 <?php 
     include('../src/databaseFunctions.php');
-    
+    include('header.php');
 ?>
  
 

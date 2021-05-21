@@ -7,9 +7,10 @@ function registerUser($firstName,$lastName,$phonenumber,$email,$password, $bootI
 }
 
 function getUser($email,$password){
-    $user = db_getData("SELECT * FROM Verhuur WHERE email = '$email' AND PASSWORD ='$password'");
+    $user = db_getData("SELECT * FROM login WHERE email = '$email' AND PASSWORD ='$password'");
     if ( $user->num_rows > 0){
         return $user;
+        header('location: index.php');
     }else{
         return "No user found";
     }
