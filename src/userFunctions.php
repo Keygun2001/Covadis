@@ -16,7 +16,7 @@ function getUser($email,$password){
 }
 function checkUser($email,$password){
     $conn=db_connect();
-    $sql = "SELECT * from Verhuur WHERE email='$email' AND password='$password' ";
+    $sql = "SELECT * from Players WHERE email='$email' AND password='$password' ";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
