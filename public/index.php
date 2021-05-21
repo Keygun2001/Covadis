@@ -12,21 +12,52 @@
             </p>
         </div>
         <div>
-            <div id="carouselPersons" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                </ol>
+            <div class="mt-4"> 
+                <a href="roomcreate.php">
+                    <button class="knop">
+                        Start Party
+                    </button>
+                </a>
+                <a href="roomjoin.php">
+                    <button class="knop">
+                        Join Party
+                    </button>
+                </a>
+            </div>
+            <div id="carouselPersons" class="carousel slide mt-4" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="Images/lol.png" class="featurette-image img-fluid mx-auto" width="500" height="500" alt="Foto 1">
+                    <div class="carousel-item active relative">
+                        <div src="Images/lol.png" class="featurette-image img-fluid mx-auto carouselimg carouselimg1" alt="Foto 1">
+                            <div class="flex justify-center items-end h-full">
+                                <a href="lbleagueoflegends.php">
+                                    <button class="knop">
+                                        Leaderboard
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="Images/mariokart.png" class="featurette-image img-fluid mx-auto" width="500" height="500" alt="Foto 2">
+                        <div src="Images/mariokart.png" class="featurette-image img-fluid mx-auto carouselimg carouselimg2" alt="Foto 2">
+                            <div class="flex justify-center items-end h-full">
+                                <a href="lbmariokart.php">
+                                    <button class="knop">
+                                        Leaderboard
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="Images/rocketleague.png" class="featurette-image img-fluid mx-auto" width="500" height="500" alt="Foto 3">
+                        <div class="featurette-image img-fluid mx-auto carouselimg carouselimg3">
+                            <div class="flex justify-center items-end h-full">
+                                <a href="lbrocketleague.php">
+                                    <button class="knop">
+                                        Leaderboard
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselPersons" role="button" data-slide="prev">
@@ -40,8 +71,7 @@
             </div>
         </div>
     </div>
-<div class="container">
-<a href="roomcreate.php">Start Party</a>
-<br>
-<a href="roomjoin.php">Join Party</a>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
