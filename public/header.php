@@ -20,7 +20,7 @@
         <div class="headercontainer">
             <div class="flex w-full items-end">
                 <div class="w-2/12 p-2">
-                    <a href="#"> 
+                    <a href="index.php"> 
                         <img src="<?php echo IMG_FOLDER; ?>/logo.png" />
                     </a>
                 </div>
@@ -32,7 +32,7 @@
                             </a>
                         </li>
                         <li class="flex justify-center">
-                            <a href="leaderboards.php">
+                            <a href="highscores.php">
                                 Leaderboards
                             </a>
                         </li>
