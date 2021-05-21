@@ -13,34 +13,38 @@
     <link rel="stylesheet" type="text/css" href="<?php echo CSS_FOLDER; ?>" />
 </head>
 <body>
-    <div class="headercontainer">
-        <div class="flex w-full items-end">
-            <div class="w-3/12">
-                <img src="<?php echo IMG_FOLDER; ?>/logo.png" />
-            </div>
-            <div class="w-9/12">
-                <ul class="w-full flex nav">
-                    <li class="w-3/12">
-                        <a href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li class="w-3/12">
-                        <a href="#">
-                            Leaderboards
-                        </a>
-                    </li>
-                    <li class="w-3/12">
-                        <a href="#">
-                            Spelers
-                        </a>
-                    </li>
-                    <li class="w-3/12">
-                        <a href="#">
-                            Inloggen
-                        </a>
-                    </li>
-                </ul>
+    <div class="btm-shadow">
+        <div class="headercontainer">
+            <div class="flex w-full items-end">
+                <div class="w-2/12 p-2">
+                    <a href="#"> 
+                        <img src="<?php echo IMG_FOLDER; ?>/logo.png" />
+                    </a>
+                </div>
+                <div class="w-9/12 flex">
+                    <ul class="w-full flex justify-end nav">
+                        <li class="flex justify-center">
+                            <a href="index.php">
+                                Home
+                            </a>
+                        </li>
+                        <li class="flex justify-center">
+                            <a href="leaderboards.php">
+                                Leaderboards
+                            </a>
+                        </li>
+                        <li class="flex justify-center">
+                            <a href="players.php">
+                                Spelers
+                            </a>
+                        </li>
+                        <li class="flex justify-center">
+                            <a href="inloggen.php">
+                                Inloggen
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
