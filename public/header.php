@@ -11,6 +11,7 @@
     <title>Covadis High-Scores op maat</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" />
+    <link rel="shortcut icon" type="image/png" href="<?php echo IMG_FOLDER.'/favicon.png'?>" />
     <link rel="stylesheet" type="text/css" href="<?php echo CSS_FOLDER; ?>" />
 </head>
 <body>

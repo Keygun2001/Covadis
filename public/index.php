@@ -5,11 +5,11 @@
     <div class="container py-12">
         <div class="w-full">
             <div>
-                <h1>
+                <h1 class="text-white">
                     Home
                 </h1>
-                <p class="mt-4">
-                    Welkom op de Covadis high-score website.
+                <p class="mt-4 text-white">
+                    Welkom op de Covadis LAN-Party Software.
                 </p>
             </div>
             <div>

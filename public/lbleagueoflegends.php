@@ -41,32 +41,31 @@ p {
   opacity: 0%;
 }
 </style>
+<div class="bg-gradient-black">
 <?php 
-
     $results = db_getData("SELECT * FROM Players ORDER BY Score DESC"); 
     $tel=0;
 ?>
-         <div class="MKContainer">
-<div class="container">
+  <div class="MKContainer">
+    <div class="container">
 
-<p class="Tabellen">Leaderboard</p>
-<table>
-
-
-  
-  <?php  foreach($results as $row){
-            $tel++;
-    ?>
-            
-           <tr><div class="vertical-menu">
-  <a href="#"><img src="Images/user.svg" alt=""> <?php echo $tel;echo" "; echo $row['GameName'];  echo ": score ";echo $row['Score']; ?> </a>
-
-  </div></tr>
-            
-            
-  </table>      
-                        <?php } ?>
-</div>
+      <p class="Tabellen">Leaderboard</p>
+      <table>
+        <?php  foreach($results as $row){
+                  $tel++;
+        ?>
+        <tr>
+          <div class="vertical-menu">
+            <a href="#">
+              <img src="Images/user.svg" alt=""> 
+              <?php echo $tel;echo" "; echo $row['GameName'];  echo ": score ";echo $row['Score']; ?>
+            </a>
+          </div>
+        </tr>    
+      </table>      
+      <?php } ?>
+    </div>
+  </div>
 </div>
 
 

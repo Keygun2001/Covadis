@@ -7,16 +7,14 @@ include('header.php');
         font-weight: bold;
     }
 </style>
+<div class="bg-gradient-black py-12">
+    <div class="container">
+        <h1 class="text-white">Select room</h1>
+        <br>
 
-<h1>Select room</h1>
-<br>
-
-<h2>Rooms:</h2>
-
-<p>
-    <a href="joiningroom.php">Room 1</a>
-    <hr>
-    <a href="#">Empty</a>
-    <hr>
-    <a href="#">Empty</a>
-</p>
+        <h2 class="text-white">Rooms:</h2>
+        <a href="joiningroom.php" class="text-white">Room 1</a>
+        <a href="joiningroom.php" class="text-white">Room 2</a>
+        <a href="joiningroom.php" class="text-white">Room 3</a>
+    </div>
+</div>

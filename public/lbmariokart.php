@@ -36,36 +36,32 @@ p {
     include('../src/databaseFunctions.php');
     include('header.php');
 ?>
- 
-
-
-
- <?php 
-
-$results = db_getData("SELECT * FROM Players ORDER BY Score3 DESC"); 
-$tel=0;
-?>
-     <div class="MKContainer">
-<div class="container">
-
-<p class="Tabellen">Leaderboard</p>
-<table>
-
-
-
-<?php  foreach($results as $row){
-        $tel++;
-?>
-        
-       <tr><div class="vertical-menu">
-<a href="#"><img src="Images/user.svg" alt=""> <?php echo $tel;echo" "; echo $row['GameName'];  echo ": score ";echo $row['Score3']; ?> </a>
-
-</div></tr>
-        
-        
-</table>      
-                    <?php } ?>
-</div>
+<div class="bg-gradient-black"> 
+  <?php 
+    $results = db_getData("SELECT * FROM Players ORDER BY Score3 DESC"); 
+    $tel=0;
+  ?>
+  <div class="MKContainer">
+    <div class="container">
+      <p class="Tabellen">
+        Leaderboard
+      </p>
+      <table>
+        <?php  foreach($results as $row){ 
+          $tel++; 
+        ?>
+        <tr>
+          <div class="vertical-menu">
+            <a href="#">
+              <img src="Images/user.svg" alt=""> 
+              <?php echo $tel;echo" "; echo $row['GameName'];  echo ": score ";echo $row['Score']; ?>
+            </a>
+          </div>
+        </tr>
+      </table>      
+      <?php } ?>
+    </div>
+  </div>
 </div>
 
 
