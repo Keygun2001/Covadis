@@ -3,5 +3,5 @@
     define ("db_host", "localhost");
     define ("db_user", "Admin");
     define ("db_password", "Ikbencool123");
-    define ("db_name", "bootverhuur");
+    define ("db_name", "covadis");
 ?>

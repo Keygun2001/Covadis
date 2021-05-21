@@ -1,5 +1,7 @@
 <?php
-    include('../config/config.php')
+    session_start();
+    include('../config/config.php');
+    include_once('../src/userFunctions.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +11,7 @@
     <title>Covadis High-Scores op maat</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo CSS_FOLDER; ?>" />
 </head>
@@ -38,11 +41,19 @@
                                 Spelers
                             </a>
                         </li>
+                        <?php if(!isset($_SESSION['user'])){  ?>
                         <li class="flex justify-center">
                             <a href="inloggen.php">
                                 Inloggen
                             </a>
                         </li>
+                        <?php } else { ?>
+                            <li class="flex justify-center">
+                            <a href="uitloggen.php">
+                                Uitloggen
+                            </a>
+                        </li>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>

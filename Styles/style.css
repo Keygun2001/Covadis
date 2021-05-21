@@ -27,3 +27,20 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
+
+h1 {
+    font-weight: 800;
+    font-size: 28px;
+}
+
+select, input, button, textarea {
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.knop {
+    padding: 10px 15px;
+    background-color: rgb(15, 228, 210);
+    color: white;
+    font-weight: 700;
+}

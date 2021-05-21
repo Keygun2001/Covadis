@@ -7,25 +7,12 @@ function registerUser($firstName,$lastName,$phonenumber,$email,$password, $bootI
 }
 
 function getUser($email,$password){
-    $user = db_getData("SELECT * FROM Verhuur WHERE email = '$email' AND PASSWORD ='$password'");
+    $user = db_getData("SELECT * FROM login WHERE email = '$email' AND PASSWORD ='$password'");
     if ( $user->num_rows > 0){
         return $user;
+        header('location: index.php');
     }else{
         return "No user found";
     }
-}
-function checkUser($email,$password){
-    $conn=db_connect();
-    $sql = "SELECT * from Verhuur WHERE email='$email' AND password='$password' ";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    $_SESSION['user'] = $row; 
-    }
-} else{
-return "0 results";
-}
 }
 ?>
