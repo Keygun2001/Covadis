@@ -44,11 +44,11 @@ p {
 <div class="flex justify-center MKContainer">
 
     <div class="vertical-menu">
-  <a href="#"><img src="Images/user.svg" alt="">Keagan</a>
-  <a href="#"><img src="Images/user.svg" alt="">Duncan</a>
-  <a href="#"><img src="Images/user.svg" alt="">Ben</a>
   <a href="#"><img src="Images/user.svg" alt="">Tim</a>
+  <a href="#"><img src="Images/user.svg" alt="">Ben</a>
+  <a href="#"><img src="Images/user.svg" alt="">Keagan</a>
   <a href="#"><img src="Images/user.svg" alt="">Erik</a>
+  <a href="#"><img src="Images/user.svg" alt="">Duncan</a>
     </div>
 
     <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>a</p>

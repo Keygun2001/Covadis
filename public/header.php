@@ -29,7 +29,7 @@
                             </a>
                         </li>
                         <li class="flex justify-center">
-                            <a href="leaderboards.php">
+                            <a href="highscores.php">
                                 Leaderboards
                             </a>
                         </li>
