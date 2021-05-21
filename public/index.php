@@ -9,7 +9,7 @@
                     Home
                 </h1>
                 <p class="mt-4">
-                    Welkom op de Covadis high-score website.
+                    Welkom bij de Covadis LAN-Party Software
                 </p>
             </div>
             <div>
