@@ -56,8 +56,12 @@ select, input, button, textarea {
     padding: 10px 15px;
     background-color: rgb(15, 228, 210);
     color: white;
+<<<<<<< HEAD
+    font-weight: 700;}
+=======
     font-weight: 700;
 }
+>>>>>>> acf9450d63a2e86531aaed56de3065abbe4ddcca
 div .Player p{
     color: white;
 }
